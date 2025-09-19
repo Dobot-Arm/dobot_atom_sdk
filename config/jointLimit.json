@@ -1,0 +1,182 @@
+[
+    {
+        "index": 0,
+        "name": "left_hip_pitch_joint",
+        "min_angle": -1.7,
+        "max_angle": 1.8
+    },
+    {
+        "index": 1,
+        "name": "left_hip_roll_joint",
+        "min_angle": -0.36,
+        "max_angle": 3.05
+    },
+    {
+        "index": 2,
+        "name": "left_hip_yaw_joint",
+        "min_angle": -2.75,
+        "max_angle": 2.75
+    },
+    {
+        "index": 3,
+        "name": "left_knee_joint",
+        "min_angle": -0.174,
+        "max_angle": 2
+    },
+    {
+        "index": 4,
+        "name": "left_ankle_pitch_joint",
+        "min_angle": -0.5,
+        "max_angle": 0.4
+    },
+    {
+        "index": 5,
+        "name": "left_ankle_roll_joint",
+        "min_angle": -0.24,
+        "max_angle": 0.24
+    },
+    {
+        "index": 6,
+        "name": "right_hip_pitch_joint",
+        "min_angle": -1.7,
+        "max_angle": 1.8
+    },
+    {
+        "index": 7,
+        "name": "right_hip_roll_joint",
+        "min_angle": -3.05,
+        "max_angle": 0.36
+    },
+    {
+        "index": 8,
+        "name": "right_hip_yaw_joint",
+        "min_angle": -2.75,
+        "max_angle": 2.75
+    },
+    {
+        "index": 9,
+        "name": "right_knee_joint",
+        "min_angle": -0.17,
+        "max_angle": 2
+    },
+    {
+        "index": 10,
+        "name": "right_ankle_pitch_joint",
+        "min_angle": -0.5,
+        "max_angle":  0.4
+    },
+    {
+        "index": 11,
+        "name": "right_ankle_roll_joint",
+        "min_angle": -0.24,
+        "max_angle": 0.24
+    },
+    {
+        "index": 12,
+        "name": "torso_joint",
+        "min_angle": -3.14,
+        "max_angle": 3.14
+    },
+    {
+        "index": 13,
+        "name": "left_shoulder_pitch_joint",
+        "min_angle": -3.05,
+        "max_angle": 3.05
+    },
+    {
+        "index": 14,
+        "name": "left_shoulder_roll_joint",
+        "min_angle": -0.44,
+        "max_angle": 3.6
+    },
+    {
+        "index": 15,
+        "name": "left_shoulder_yaw_joint",
+        "min_angle": -3.05,
+        "max_angle": 3.05
+    },
+    {
+        "index": 16,
+        "name": "left_elbow_pitch_joint",
+        "min_angle": -1.57,
+        "max_angle": 1.48
+    },
+    {
+        "index": 17,
+        "name": "left_elbow_roll_joint",
+        "min_angle": -3.05,
+        "max_angle": 3.05
+    },
+    {
+        "index": 18,
+        "name": "left_wrist_pitch_joint",
+        "min_angle": -1.9,
+        "max_angle": 1.9
+    },
+    {
+        "index": 19,
+        "name": "left_wrist_roll_joint",
+        "min_angle": -3.05,
+        "max_angle": 3.05
+    },
+    {
+        "index": 20,
+        "name": "right_shoulder_pitch_joint",
+        "min_angle": -1.57,
+        "max_angle": 1.57
+    },
+    {
+        "index": 21,
+        "name": "right_shoulder_roll_joint",
+        "min_angle": -3.14,
+        "max_angle": 3.14
+    },
+    {
+        "index": 22,
+        "name": "right_shoulder_yaw_joint",
+        "min_angle": -3.05,
+        "max_angle": 3.05
+    },
+    {
+        "index": 23,
+        "name": "right_elbow_pitch_joint",
+        "min_angle": -0.44,
+        "max_angle": 3.6
+    },
+    {
+        "index": 24,
+        "name": "right_elbow_roll_joint",
+        "min_angle": -3.05,
+        "max_angle": 3.05
+    },
+    {
+        "index": 25,
+        "name": "right_wrist_pitch_joint",
+        "min_angle": -1.57,
+        "max_angle": 1.48
+    },
+    {
+        "index": 26,
+        "name": "right_wrist_roll_joint",
+        "min_angle": -3.05,
+        "max_angle": 3.05
+    },
+    {
+        "index": 27,
+        "name": "head_yaw_joint",
+        "min_angle": -1.9,
+        "max_angle": 1.9
+    },
+    {
+        "index": 28,
+        "name": "head_pitch_joint",
+        "min_angle": -1.57,
+        "max_angle": 1.57
+    },
+    {
+        "index": 29,
+        "name": "joint30",
+        "min_angle": -3.14,
+        "max_angle": 3.14
+    }
+]

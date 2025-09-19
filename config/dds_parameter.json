@@ -1,0 +1,6 @@
+{
+    "Participant": {
+        "DomainId": 0,
+        "Config": "config/cyclonedds.xml"
+    }
+}

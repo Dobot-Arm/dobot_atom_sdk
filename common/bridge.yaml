@@ -1,0 +1,3 @@
+send_motor_command: true
+send_hand_command_: true
+send_arm_command_: true

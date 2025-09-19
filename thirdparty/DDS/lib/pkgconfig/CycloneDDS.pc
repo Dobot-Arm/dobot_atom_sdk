@@ -1,0 +1,9 @@
+prefix=/home/project/3.dds/5.tencent/3.sdk/sdk_cpp/thirdparty/DDS
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: CycloneDDS
+Description: Eclipse Cyclone DDS library
+Version: 0.10.5
+Libs: -L${libdir} -lddsc
+Cflags: -I${includedir}

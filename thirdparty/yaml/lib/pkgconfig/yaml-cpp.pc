@@ -1,0 +1,11 @@
+prefix=/home/project/2.sim2real/3.Dobot_deploy/thirdparty/yaml
+exec_prefix=${prefix}
+includedir=/home/project/2.sim2real/3.Dobot_deploy/thirdparty/yaml/include
+libdir=/home/project/2.sim2real/3.Dobot_deploy/thirdparty/yaml/lib
+
+Name: Yaml-cpp
+Description: A YAML parser and emitter for C++
+Version: 0.8.0
+Requires:
+Libs: -L${libdir} -lyaml-cpp
+Cflags: -I${includedir}

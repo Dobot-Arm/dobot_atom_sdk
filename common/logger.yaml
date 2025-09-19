@@ -1,0 +1,25 @@
+log_dir: "."
+log_destination: 0
+# 0: Log messages to stderr (e.g. terminal) only;
+# 1: Log messages to files only;
+# 2: Log to both stderr and files;
+
+logtostderr: 0
+# 0: Log messages to stderr (e.g. terminal) only;
+# 1: Log messages to files only;
+
+alsologtostderr: 2
+# 0: 不输出到 stderr
+# 2: 输出到 stderr
+
+min_log_level: 0
+# 0: INFO：所有日志信息（包括信息、警告、错误、致命错误）都会输出。
+# 1: WARNING：仅显示警告、错误和致命错误信息。
+# 2: ERROR：仅显示错误和致命错误信息。
+# 3: FATAL：仅显示致命错误信息，程序会在遇到致命错误时终止。
+
+stderr_threshold: 0
+# 0: INFO：输出所有级别的日志到 stderr。
+# 1: WARNING：只输出警告及以上级别的日志到 stderr。
+# 2: ERROR：只输出错误及以上级别的日志到 stderr。
+# 3: FATAL：仅输出致命错误到 stderr。
