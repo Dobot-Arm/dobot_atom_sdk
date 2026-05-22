@@ -18,6 +18,7 @@ extern "C" {
 typedef struct dobot_atom_msg_dds__SetFsmId_
 {
   uint16_t id;
+  char * current_action;
 } dobot_atom_msg_dds__SetFsmId_;
 
 extern const dds_topic_descriptor_t dobot_atom_msg_dds__SetFsmId__desc;

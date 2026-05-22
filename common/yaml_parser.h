@@ -70,6 +70,9 @@ public:
 private:
     std::string yaml_file_;
     YAML::Node node_;
+
+public:
+    YAML::Node GetNode(const std::string &node_name) { return node_[node_name]; }
 };
 
 #endif  // YAML_PARSER_

@@ -83,8 +83,8 @@ int main(int argc, char *argv[])
     // Main control loop.
     while (1) {
         // Get the current joint states from the robot.
-        const std::shared_ptr<const Atom::JointState> js_tmp_ptr = bridge.GetNewestJointStatePtr();    // leg
-        const std::shared_ptr<const Atom::ArmJointState> ajs_tmp_ptr = bridge.GetNewestArmStatePtr();  // arm
+        const std::shared_ptr<const Atom::JointState> js_tmp_ptr = bridge.GetNewestLegJointStatePtr();      // leg
+        const std::shared_ptr<const Atom::ArmJointState> ajs_tmp_ptr = bridge.GetNewestArmJointStatePtr();  // arm
         timer.Tic();
 
         if (js_tmp_ptr && ajs_tmp_ptr) {

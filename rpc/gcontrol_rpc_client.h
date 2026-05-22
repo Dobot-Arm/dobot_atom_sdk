@@ -40,6 +40,11 @@ public:
     RpcErrorCode Pc1MicServer(bool flag, bool& result);
     RpcErrorCode Pc1MicIVW(const uint32_t timeout, std::string& result);
     RpcErrorCode Pc1MicESR(const uint32_t timeout, std::string& result);
+    RpcErrorCode AMRTaskFinished(bool& result);
+    RpcErrorCode AMRNavigateToTag(uint32_t target_id, float theta, bool& result);
+    RpcErrorCode SetGpioDo(uint32_t index, uint8_t value, bool& result);
+    RpcErrorCode GetGpioDi(std::vector<uint8_t>& values);
+    RpcErrorCode GetGpioDo(std::vector<uint8_t>& values);
 
 private:
     int m_udpSockFd = -1;

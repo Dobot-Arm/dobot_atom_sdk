@@ -58,8 +58,6 @@ namespace Atom
 
     // base state of Atom iw.r.t global frame
     struct BaseState {
-        Eigen::Vector3f pos = Eigen::Vector3f::Zero();
-        Eigen::Matrix3f R = Eigen::Matrix3f::Identity();
         Eigen::Vector3f rpy = Eigen::Vector3f::Zero();
         Eigen::Vector3f vel = Eigen::Vector3f::Zero();
         Eigen::Vector3f w = Eigen::Vector3f::Zero();
@@ -71,6 +69,7 @@ namespace Atom
         Eigen::Matrix<float, Atom::kLegDofs, 1> dq = Eigen::Matrix<float, Atom::kLegDofs, 1>::Zero();          // velocity
         Eigen::Matrix<float, Atom::kLegDofs, 1> tau = Eigen::Matrix<float, Atom::kLegDofs, 1>::Zero();         // torque
         Eigen::Matrix<float, Atom::kLegDofs, 1> busVoltage = Eigen::Matrix<float, Atom::kLegDofs, 1>::Zero();  // busVoltage
+        Eigen::Matrix<float, Atom::kLegDofs, 1> q_raw = Eigen::Matrix<float, Atom::kLegDofs, 1>::Zero();       // angle
     };
 
     struct ArmJointState {
@@ -78,6 +77,11 @@ namespace Atom
         Eigen::Matrix<float, Atom::kArmDofs, 1> dq = Eigen::Matrix<float, Atom::kArmDofs, 1>::Zero();
         Eigen::Matrix<float, Atom::kArmDofs, 1> tau = Eigen::Matrix<float, Atom::kArmDofs, 1>::Zero();
         Eigen::Matrix<float, Atom::kArmDofs, 1> busVoltage = Eigen::Matrix<float, Atom::kArmDofs, 1>::Zero();
+    };
+
+    struct Remote_Velocity {
+        Eigen::Matrix<float, 2, 1> lineVel = Eigen::Matrix<float, 2, 1>::Zero();
+        Eigen::Matrix<float, 2, 1> angVel = Eigen::Matrix<float, 2, 1>::Zero();
     };
 
     struct MainNodesStateStruct {
@@ -89,6 +93,7 @@ namespace Atom
         Eigen::Matrix<int, Atom::kDofs, 1> torque_err_code = Eigen::Matrix<int, Atom::kDofs, 1>::Zero();
     };
 
+    enum AtomRobotType { kUnknown = 0, kAtomMax = 1, kAtomStandard = 2, kAtomD = 3, kAtomTrainer = 4, kAtomAMR = 5, kAtomW = 6 };
     struct BmsStateStruct {
         uint16_t bms_state;                // BMS状态
         uint16_t battery_level;            // 电池电量百分比
@@ -97,6 +102,11 @@ namespace Atom
         uint16_t cells_voltage[16];        // 16个电芯电压
         uint16_t battery_pack_io_voltage;  // 电池包放电/充电接口的电压
     };
+
+    struct DexterousHandState {
+        Eigen::Matrix<float, Atom::kNumHands, 1> q = Eigen::Matrix<float, Atom::kNumHands, 1>::Zero();
+    };
+
 }  // namespace Atom
 
 #endif  // COMMON_BASE_STATE_

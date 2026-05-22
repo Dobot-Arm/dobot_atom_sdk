@@ -7,7 +7,6 @@
 
 namespace Atom
 {
-
     // Define the error code enumeration
     enum RpcErrorCode {
         SUCCESS = 0,
@@ -19,7 +18,11 @@ namespace Atom
         SERVER_INTERNAL_ERROR = 6,
         FSM_TRANSITION_FAILED = 100,
         SWITCH_UPPER_LIMB_CONTROL_FAILED = 101,
-        SET_VEL_FAILED = 102
+        SET_VEL_FAILED = 102,
+        SET_UPPER_LIMB_JOINT_FAILED = 103,
+        SET_LIFT_POSE_FAILED = 104,
+        TRIGGER_TRAJECTORY_RECORDING_FAILED = 105,
+        EXECUTE_ACTION_FAILED = 106
     };
 
     class BaseRpcClient

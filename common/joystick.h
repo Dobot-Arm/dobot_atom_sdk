@@ -40,10 +40,11 @@ typedef struct {
 } xRockerBtnDataStruct;
 
 struct RemoteCommand {
-    double pos_incre = 0;  //位置递增
+    double pos_incre = 0;  // 位置递增
 
     Eigen::Vector2f lin_vel = Eigen::Vector2f::Zero();
     float yaw_vel = 0.0;
+    float height = 0.0;
 
     bool button_START_ = false;
     bool button_SELECT_ = false;
@@ -104,6 +105,15 @@ struct RemoteCommand {
     bool button_B_ = false;
     bool button_X_ = false;
     bool button_Y_ = false;
+
+    bool button_L2U_A_ = false;
+    bool button_L2D_A_ = false;
+    bool button_L2L_A_ = false;
+    bool button_L2R_A_ = false;
+    bool button_L2U_B_ = false;
+    bool button_L2D_B_ = false;
+    bool button_L2L_B_ = false;
+    bool button_L2R_B_ = false;
 };
 
 #endif  // COMMON_JOYSTICK_

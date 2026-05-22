@@ -43,8 +43,8 @@ int main(int argc, char *argv[])
     // Main loop to record joint angles.
     while (1) {
         // Get the latest joint states for the arm and legs.
-        const std::shared_ptr<const Atom::ArmJointState> ajs_tmp_ptr = bridge.GetNewestArmStatePtr();
-        const std::shared_ptr<const Atom::JointState> js_tmp_ptr = bridge.GetNewestJointStatePtr();
+        const std::shared_ptr<const Atom::ArmJointState> ajs_tmp_ptr = bridge.GetNewestArmJointStatePtr();
+        const std::shared_ptr<const Atom::JointState> js_tmp_ptr = bridge.GetNewestLegJointStatePtr();
         if (nullptr == ajs_tmp_ptr || nullptr == js_tmp_ptr) {
             std::cerr << "Failed to get joint state ptr" << std::endl;
             return 1;
